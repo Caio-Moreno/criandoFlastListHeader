@@ -90,7 +90,7 @@ export default function App() {
 
   const [jsonData,setJsonData] = React.useState({})
 
-  executeGet("https://reqres.in/api/users?page=2",setJsonData)
+  executeGet("https://reqres.in/api/users?delay=3",setJsonData)
 
   //função que renderiza cada item do FlatList
   function meuItem({item}){
